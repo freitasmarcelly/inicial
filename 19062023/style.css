@@ -34,4 +34,24 @@ section .container {
 section .container .card {
     border: 1px solid #dedede;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
+section .container .card .cadastro-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section .container .card .cadastro-table table td div {
+    display: flex;
+    justify-content: center;
+}
+
+section .container .card .cadastro-form form {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
