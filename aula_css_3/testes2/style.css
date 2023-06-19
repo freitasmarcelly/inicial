@@ -1,0 +1,34 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+
+}
+
+body {
+    background-color: #333;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+/* A borda pode ser feita desse jeito ou em uma linha como abaixo.
+.card {
+    width: calc((100% - 30px) / 4);
+    border-width: 1px;
+    border-style: solid;
+    border-color: aliceblue;
+}  */
+
+.card {
+    width: calc((100% - 30px) / 4);
+    border: 1px solid aliceblue;
+} 

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: orange;
+    display: flex;
+    gap: 10px;
+}
+
+.container .item {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.container .item:hover {
+    transform: scale(1.1,1.1);
+}
+

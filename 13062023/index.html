@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<nav>
+    <div class='container'>
+        <div class='navbar'>
+            <ul class="menu">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <button class="btn btn-danger logout">logout</button>
+        </div>
+    </div>
+</nav>  
+
+<section class='main'>
+    <div class='container'>
+        <div class='card cadastro'>
+            <div class='cadastro-header'>
+                <h1>
+                    Adicionar Produto
+                </h1>
+            </div>
+            <div class='cadastro-form'>
+                <form action="#" method="POST">
+                    <div class='form-group'>
+                        <label for="name">Produto:</label>
+                        <select id="produto" name="produto">
+                            <option value="volvo">Produto</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                    <div class='form-group'>
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+                    </div>
+
+                    <div class='form-group'>
+                        <button class="btn btn-success adicionar">Adicionar</button>
+                    </div>
+                </form>
+            </div>
+            <div class='cadastro-table'>
+                <table border="1">
+                    <thead>
+                      <tr>
+                        <th width="40%">Produto</th>
+                        <th width="40%">Quantidade</th>
+                        <th width="20%"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Produto 1</td>
+                        <td>5</td>
+                        <td>                    
+                            <button class="btn btn-danger remover">Remover</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Produto 2</td>
+                        <td>3</td>
+                        <td>                    
+                            <button class="btn btn-danger remover">Remover</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Produto 3</td>
+                        <td>8</td>
+                        <td>                    
+                            <button class="btn btn-danger remover">Remover</button>
+                        </td>   
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

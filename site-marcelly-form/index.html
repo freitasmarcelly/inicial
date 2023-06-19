@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Aula - formulários</title>
+    <style>
+        body {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- GET, POST, DELETE, PATCH, PUT -->
+    <form action='' method="GET">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for='nome'>Nome</label>
+            <input type='text' name='nome' id='nome' placeholder="Digite seu nome completo" value="Este valor está pré definido">
+            <label for=''>Senha</label>
+            <input type='password' name='senha' id='senha' placeholder="Digite sua senha">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for=''>Logradouro</label>
+            <input type='text' name='logradouro' id='logradouro' placeholder="Digite seu logradouro completo">
+            <label for=''>Número</label>
+            <input type='number' name="numero" placeholder="numero">
+            <label for=''></label>
+            <input required type='email' name='email' id='email'>
+            <label for=''></label>
+            <input type='search' name='pesquisar' id='pesquisar'>
+        </fieldset>
+        <fieldset>
+            <legend>Animes preferidos</legend>
+            <label for='naruto'>Naruto</label>
+            <input type='checkbox' name='naruto' />
+            <label for='dragon_ball'>dragon ball</label>
+            <input type='checkbox' name='dragon_ball' />
+            <label for='boku_no_hero'>Boku no hero</label>
+            <input type='checkbox' name='boku_no_hero' />
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for='masculino'>Masculino</label>
+            <input type='radio' name='sexo' value="masculino" />
+            <label for='feminino'>feminino</label>
+            <input type='radio' name='sexo' value="feminino" />
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+        <button type="button">Não faz nada</button>
+    </form>
+</body>
+</html>
